@@ -1,0 +1,18 @@
+[package]
+name = "source-excel-multisheet"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+airbyte-protocol.workspace = true
+calamine = { version = "0.38", features = ["dates"] }
+chrono = { version = "0.4", default-features = false, features = ["alloc"] }
+clap = { version = "4", features = ["derive"] }
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+rust_xlsxwriter = "0.102"
+tempfile = "3"
