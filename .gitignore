@@ -1,0 +1,30 @@
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local tool settings, never committed
+.claude/
+.cursor/
+.aider*
+CLAUDE.md
+AGENTS.md
+
+# Secrets and local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Data that must never be committed
+/data/
+*.local.csv
+*.local.xlsx
+
+# Rust
+/target/
+
+# Recorded fixtures may hold real responses. Only commit anonymized ones under tests/fixtures/
+/recordings/
